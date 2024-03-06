@@ -110,6 +110,10 @@ document.getElementById('btnSwitch').addEventListener('click',()=>{
 
 
 
-// 
+// Onsubmit
 
+
+function updated(){
+    alert("Temporarily Facing Technical Issue,Thank You!!!")
+}
 
