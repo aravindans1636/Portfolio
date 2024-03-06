@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&family=Protest+Revolution&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding,3rem);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style:normal;
+  scroll-behavior: smooth;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+
+.active{
+    color: rgb(255, 0, 0)!important;
+    
+    border-bottom: 3px solid rgb(255, 0, 111)!important;
+    border-radius: 20%;
+    background: linear-gradient(0deg,#f644446f,transparent)!important;
+}
+
+
+
+/* *************************************************************************************** */
+/* Navbar */
+
+.menus a:hover{
+    cursor: pointer;
+    transform: scale(1.0);
+    /* padding: 1%; */
+    transform: rotateY(360deg);
+    color:red;
+}
+
+
+#navbars{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color:rgb(229, 244, 27);
+    z-index: 100;
+
+}
+
+
+#navbars ul li a{
+    position: relative;
+}
+
+
+#navbars ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    width: 0;
+    background-color: rgb(0, 4, 255);
+    transition: 2s;
+}
+
+
+
+#navbars ul li a:hover::after{
+    width: 100%;
+    transition: 3s;
+}
+
+
+#logo{
+    width: 5%;
+    height: 3%;
+}
+
+
+/* ********************************************************************************************************* */
+
+
+/* ***************** Active Links*******************************************************************/
+
+
+
+
+/* ************************************************************************************************ */
+
+
+
+/* ***************************Name Section****************************************************************** */
+#mainName{
+    font-weight: bold;
+    
+    font-size: 40px;
+    
+    letter-spacing: 3px;
+    
+    background: rgb(255,12,0);
+    
+    background: linear-gradient(90deg, rgba(255,12,0,1) 18%, rgba(249,255,0,1) 41%, rgba(18,255,0,1) 59%, rgba(0,14,255,1) 100%);
+    
+    color: transparent;
+    
+    background-clip: text;
+    
+    --webkit-background-clip:text;
+
+    background-size: 600px 600px;
+
+    font-family: "Protest Revolution", sans-serif;
+
+  font-style: normal;
+
+    animation: gradient-text 3s ease infinite;
+
+}
+
+@keyframes gradient-text {
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
+
+
+.typedText{
+    font-size: 2.9rem;
+    letter-spacing: 0.1rem;
+    font-weight: bolder;
+    color: rgb(255, 0, 85);
+}
+
+ 
+.typed-cursor {
+    font-size: 2.6rem;
+    color:rgb(12, 12, 12);
+}
+
+/* *********************************************************************************** */
+/* Image Section*/
+
+#myImage{
+    border-radius:0 0 40% 40% ;
+    animation: moving 2s ease infinite;
+
+}
+
+@keyframes moving{
+    0%{
+        transform: translate(0,0);
+        /* transform: rotateY(90deg); */
+    }
+    50%{
+        transform: translate(-8px);
+        /* transform: rotateY(180deg); */
+    }
+    100%{
+        transform: translate(0,0);
+        /* transform: rotateY(360deg); */
+    }
+}
+   
+#myImage:hover{
+    filter: brightness(.6);
+    cursor: pointer;
+}
+
+
+.firstText{
+    font-weight: bolder;
+   
+}
+
+
+.InkSplatter{
+    position: absolute;
+    right: 4%;
+    top: 17%;
+    z-index: -100;
+    animation: inkmoving 2s ease infinite ;
+}
+
+@keyframes inkmoving{
+    0%{
+        transform: translate(0,0);
+        /* transform: rotateY(90deg); */
+    }
+    50%{
+        transform: translateY(-12px);
+        /* transform: rotateY(180deg); */
+    }
+    100%{
+        transform: translate(0,0);
+        /* transform: rotateY(360deg); */
+    }
+}
+
+
+
+
+/* ************************************************************************************** */
+
+
+
+
+/* Icon Section */
+/* *************************************************************************************** */
+
+
+
+
+ .iconSize {
+    text-decoration: none;
+    margin-right: 5%;
+   padding: 5px;
+ }
+ 
+
+ .boxIcons{
+    /* border: 3px solid rgb(12, 3, 22); */
+    box-shadow: 0 20px 20px cyan;
+    border-radius: 50%;
+    font-size: 30px;
+    color: rgb(81, 0, 255);
+ }
+
+ .boxIcons:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-10px);
+    
+ }
+
+
+ .iconCircle{
+    position: absolute;
+    transform: transform(-50px,-50px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    animation: iconSlide 6s infinite alternate;
+ }
+
+
+ @keyframes iconSlide {
+    25%{
+        border: 3px solid rgb(255, 0, 68);
+        left: 42%;
+    }
+    50%{
+        border: 3px solid red;
+        left: 33.7%;
+    }
+    75%{
+        border: 3px solid green;
+        left: 50.5%;
+    }
+    100%{
+        border: 3px solid blue;
+        left: 58.7%;
+    }
+    
+ }
+ 
+
+
+  /* *************************************************************************************** */
+
+
+
+
+
+
+  /* *************************************************************************************** */
+  /* Skills */
+#skillsText h1{
+    position: relative;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
+}
+
+#skillsText h1::after{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 60%;
+    background: rgb(0, 255, 187);
+    animation: skillBorder 4s ease infinite;
+    transition: 3s;
+}
+
+@keyframes skillBorder {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+#skillsText h1::before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: 0;
+    width: 0;
+    height: 5px;
+    border-radius: 60%;
+    background: rgb(0, 255, 187);
+    animation: skillBorder2 4s ease infinite;
+    transition: 3s;
+}
+
+@keyframes skillBorder2 {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+
+.myImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.myImage img{
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    border: 3px solid black;
+    box-shadow: 8px 8px 15px rgba(0,0,0,.3);
+}
+
+.c1{
+    border: none;
+    box-shadow: 10px 15px 15px cyan;
+    transform: scale(.8);
+}
+
+
+.skillsContent{
+    border-bottom: 3px solid yellow;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+.cardChange:hover{
+    cursor: pointer;
+    transform: scale(.9)!important;
+    transition: 1s;
+    background-color: rgb(238, 162, 209);
+    box-shadow: 8px 8px 15px black;
+    /* transition: 1s; */
+    /* border: 3px solid pink; */
+}
+/* ************************************************************************************************** */
+
+
+/* *********************************************************************************************** */
+
+
+/* *****************************Education********************************************************* */
+
+.Education h1{
+    position: relative;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.Education h1::after{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 60%;
+    background: rgb(0, 255, 187);
+    animation: Educationani 4s ease infinite;
+    transition: 3s;
+}
+
+@keyframes Educationani {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+.Education h1::before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: 0;
+    width: 0;
+    height: 5px;
+    border-radius: 60%;
+    background: rgb(0,255,187);
+    animation: Educationani2 4s ease infinite;
+    transition: 3s;
+}
+
+@keyframes Educationani2 {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+
+.bxs-school{
+    font-size: 130%;
+}
+
+
+.bx-globe{
+    font-size: 130%;
+}
+
+.bxs-download{
+    font-size: 130%;
+    
+}
+
+.bx-map-pin{
+    font-size: 130%;
+}
+
+/* .skew{
+    transform: skewX(-5deg);
+} */
+
+.paths{
+    position: relative;
+    margin-left: 20%;
+    padding-left: 5%;
+}
+
+
+.bxs-circle{
+    position: absolute;
+    left: -3%;
+    z-index: 100;
+}
+
+.paths::after{
+content: '';
+position: absolute;
+width: 4px;
+height: 100%;
+top: 0;
+left: -0.7%;
+background-color: rgb(255, 14, 14);
+
+}
+
+.skew:hover{
+    background: linear-gradient(0deg,rgb(249, 159, 159),transparent)!important;
+    /* transform: skew(8deg); */
+    box-shadow: 10px 10px 15px rgba(1, 131, 252, 0.775);
+}
+
+.bxl-gmail{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    font-size: 200%;
+    z-index: 100;
+    color: rgb(252, 62, 24);
+    animation: gmail 6s linear infinite;
+}
+
+.bxs-phone-call{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    font-size: 200%;
+    z-index: 100;
+    color: green;
+    animation: gmail 6s linear infinite;
+}
+
+.bxs-comment-add{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 200%;
+    z-index: 100;
+    color: rgb(255, 0, 221);
+    animation: gmail 6s linear infinite;
+}
+
+@keyframes gmail {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+#message{
+    height: 250%;
+}
+
+.bdrchange{
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+
+
+
+/* ************************Progress Chart********************************************** */
+/* .element {
+          color:rgb(87, 87, 87);
+          font-size: 5.7rem;
+          letter-spacing: 0.1rem;
+      } */
+
+
+
+       /* Dark/Light Mode */
+
+
+  .darkMode{
+    background-color: rgb(59, 50, 50)!important;
+    color: white!important;
+  }
+
+  .darkMode .typedText{
+    color: white;
+  }
+
+
+  .darkMode .boxIcons{
+    color: rgb(255, 0, 123);
+    background-color: white;
+  }
+
+.darkMode .boxIcons{
+    box-shadow: 0 15px 20px red;
+}
+
+  .darkMode .edu{
+    color: white;
+  }
+
+  .darkMode .sk{
+    color: white!important;
+  }
+
+  .darkMode .lbl{
+    color: black;
+  }
+
+  .darkMode .typed-cursor{
+    color: white;
+  }
+
+  .darkMode .InkSplatter{
+    filter: drop-shadow(0 0 25px black);
+  }
+  /* *************************************************************************************** */
+
+
+  /* **************************Loading************************************************* */
+
+  .loading{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    border: 12px solid #e3e3e3;
+    border-radius: 50%;
+    border-right-color: #4070f4;
+    animation: spin 1s ease infinite;
+    background: rgb(255, 0, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  @keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+     
+
+/* *********************************************************************************** */
+
+/* *********************Toggle Switch*********************************** */
+#lightMode{
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    z-index: 10;
+    border-radius: 50%;
+    padding: 0.8%;
+    background-color: white;
+    color: black;
+
+}
+
+#darkMode{
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    z-index:10;
+    border-radius: 50%;
+    padding: 0.8%;
+    background-color:black;
+    color: white;
+}
+
+#btnSwitch{
+    z-index: 100;
+    position: fixed;
+}
+
+
+
+
+
+/* ************************************************************************** */
+
+/* **********************Media Query*********************************************** */
+
+@media only screen and (max-width: 768px) {
+    #mainName{
+        font-size: 33px!important;
+    }
+    
+    .iconCircle{
+        display: none;
+
+    }
+
+    .boxIcons{
+        border: 3px dotted red;
+    }
+    .InkSplatter{
+        top: 50%;
+    }
+    #message{
+        height: 100%;
+    }
+     #darkMode{
+        position: fixed;
+        top: 80%;
+        left: 70%;
+        z-index: 100;
+    }
+    #lightMode{
+        position: fixed;
+        top: 80%;
+        left: 70%;
+        z-index: 100;
+    }
+    #btnSwitch{
+        position: fixed;
+        top: 80%;
+        left: 70%;
+        z-index: 100;
+    } 
+    
+  }
+
+
+ 
+
+
+
