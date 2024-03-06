@@ -607,6 +607,7 @@ background-color: rgb(255, 14, 14);
   .darkMode .InkSplatter{
     filter: drop-shadow(0 0 25px black);
   }
+
   /* *************************************************************************************** */
 
 
@@ -639,7 +640,7 @@ background-color: rgb(255, 14, 14);
 /* *********************************************************************************** */
 
 /* *********************Toggle Switch*********************************** */
-#lightMode{
+/* #lightMode{
     position: fixed;
     top: 90%;
     left: 90%;
@@ -660,14 +661,30 @@ background-color: rgb(255, 14, 14);
     padding: 0.8%;
     background-color:black;
     color: white;
-}
+} */
 
-#btnSwitch{
-    z-index: 100;
+/* #btnSwitch{ */
+    /* position: fixed;
+    top: 70%;
+    left: 90%;
+    z-index: 10;
+    border-radius: 50%;
+    padding: 0.8%; */
+    /* background-color: white;
+    color: black;
+} */
+
+
+.toggleicon{
     position: fixed;
+    float: right;
+    border-radius: 100%;
+    background-color: white;
+    color: black;
+    bottom: 8%;
+    right: 20px;
+    padding: 10px;
 }
-
-
 
 
 
@@ -689,29 +706,12 @@ background-color: rgb(255, 14, 14);
         border: 3px dotted red;
     }
     .InkSplatter{
-        top: 50%;
+        top: 38%;
     }
     #message{
         height: 100%;
     }
-     #darkMode{
-        position: fixed;
-        top: 80%;
-        left: 70%;
-        z-index: 100;
-    }
-    #lightMode{
-        position: fixed;
-        top: 80%;
-        left: 70%;
-        z-index: 100;
-    }
-    #btnSwitch{
-        position: fixed;
-        top: 80%;
-        left: 70%;
-        z-index: 100;
-    } 
+     
     
   }
 
