@@ -378,8 +378,9 @@
                         <div class="my-5 text-center m-auto">
                             <h5>Please contact me directly at <span class="m-auto"><a href="mailto:aravindans1636@gmail.com" class="m-auto">aravindans1636@gmail.com</a></span> or through this form.</h5>
                         </div>
-                        <form action="" onsubmit="updated()">
+                        <form method="POST" action="https://api.web3forms.com/submit" onsubmit="">
                             <!-- ---------------Mail Section-------------- -->
+                            <input type="hidden" name="access_key" value="61907508-240e-4c7a-800f-6b460712f2f1">
                             <div class="row">
                                 <div class="col-md-6 col-sm-12 m-auto">
                                     <div class="form-floating mb-3 position-relative">
@@ -395,8 +396,8 @@
                             <div class="col-md-6 col-sm-12 m-auto">
                                     <div class="form-floating mb-3 position-relative">
                                         <span><i class='bx bxs-phone-call position-absolute' ></i></span>
-                                        <input type="number" class="form-control" name="Number" placeholder="Number" title="Mobile-Number" required>
-                                        <label class="lbl" for="Number">Mobile Number</label>
+                                        <input type="name" class="form-control" name="Number" placeholder="Name" title="Name" required>
+                                        <label class="lbl" for="Number">Name</label>
                                     </div>    
                             </div>
                            </div>
@@ -406,13 +407,13 @@
                                     <div class="form-floating mb-3 position-relative">
                                         <span><i class='bx bxs-comment-add position-absolute'></i></span>
                                         <textarea id="message" placeholder="Message" class="form-control" rows="6" name="message" title="Message" required></textarea>
-                                        <label class="lbl" for="message">Message:</label>
+                                        <label class="lbl" for="message">Message</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 col-sm-12 m-auto text-center">
-                                    <button class="btn btn-success" type="submit">Submit</button>
+                                    <button class="btn btn-success px-3 py-2" type="submit">Submit</button>
                                 </div>
                             </div>
                             
