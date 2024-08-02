@@ -112,8 +112,13 @@ document.getElementById('btnSwitch').addEventListener('click',()=>{
 
 // Onsubmit
 
+var inputs = document.querySelectorAll("input")
+
+
 
 function updated(){
-    alert("Temporarily Facing Technical Issue,Thank You!!!")
+    inputs.values = "";
+
+    
 }
 
