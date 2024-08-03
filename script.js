@@ -110,15 +110,13 @@ document.getElementById('btnSwitch').addEventListener('click',()=>{
 
 
 
+
 // Onsubmit
 
-var inputs = document.querySelectorAll("input")
 
 
 
-function updated(){
-    inputs.values = "";
 
-    
-}
+
+
 
