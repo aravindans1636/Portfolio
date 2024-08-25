@@ -111,9 +111,20 @@ document.getElementById('btnSwitch').addEventListener('click',()=>{
 
 
 
-// Onsubmit
+// gsap scrolltrigger
 
+// var tl = gsap.timeline({scrollTrigger:{
+//     trigger:".InkSplatter",
+//     start:"0% 95%",
+//     end:"50% 50%",
+//     scrub:true,
+//     markers:true,
+// }})
 
+// tl.to("#contact",{
+//     top:"150%",
+//     left:"10%"
+// })
 
 
 
